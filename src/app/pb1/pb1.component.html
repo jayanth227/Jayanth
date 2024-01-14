@@ -1,0 +1,6 @@
+<h1>Property Binding</h1>
+<label for="amount">Enter the amount</label>
+<input type="number" [(ngModel)]="amount">
+<br/>
+<button [disabled]="isWorkingHours" (click)="getMessage()">Cash Deposit</button>
+{{msg}}

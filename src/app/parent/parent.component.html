@@ -1,0 +1,17 @@
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="selected" id="inlineRadio1"[(ngModel)]="selected" value="All" (change)="bracket($any($event.target).value)">
+    <label class="form-check-label" for="inlineRadio1">All</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="selected" id="inlineRadio2" [(ngModel)]="selected"value="Pass" (change)="bracket(selected!)">
+    <label class="form-check-label" for="inlineRadio2">Pass</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="selected" id="inlineRadio3" [(ngModel)]="selected" value="Fail" (change)="bracket(selected!)">
+    <label class="form-check-label" for="inlineRadio3">Fail</label>
+  </div>
+<br/>
+<br/>
+<br/>
+<div class="text-center">  {{temp}}</div>
+  <app-child [selectedData]="selected"(notify)="handle($event)"></app-child>

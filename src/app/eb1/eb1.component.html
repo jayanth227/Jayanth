@@ -1,0 +1,15 @@
+<h1> Event Binding</h1>
+<label for="sname">Enter Name</label>
+<input type="text"[(ngModel)]="sname" id="sname"/>
+
+
+
+<label for="num1">Enter Num1</label>
+<input type="number" [(ngModel)]="num1" id="num1"/>
+
+<label for="num2">Enter Num2</label>
+<input type="number" [(ngModel)]="num2" id="num2"/>
+<button (click)="fun('add')">ADD</button>
+<button (click)="fun('sub')">ADD</button>
+<button (click)="fun('max')">ADD</button>
+{{res}}
