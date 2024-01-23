@@ -5,5 +5,5 @@ export class Student {
     name:string="";
     gender:string="";
     result:string="";
-   
+    
 }
